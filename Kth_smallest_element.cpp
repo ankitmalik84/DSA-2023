@@ -1,7 +1,7 @@
 //{ Driver Code Starts
 // Initial function template for C++
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 class Solution
