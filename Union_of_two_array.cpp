@@ -1,55 +1,55 @@
+//{ Driver Code Starts
+// Initial template for C++
+
 #include <bits/stdc++.h>
 using namespace std;
 
+// } Driver Code Ends
+// User function template in C++
+
+class Solution
+{
+public:
+    // Function to return the count of number of elements in union of two arrays.
+    int doUnion(int a[], int n, int b[], int m)
+    {
+        // code here
+        set<int> s;
+
+        // Inserting array elements in s
+        for (int i = 0; i < n; i++)
+            s.insert(a[i]);
+
+        for (int i = 0; i < m; i++)
+            s.insert(b[i]);
+        return s.size();
+    }
+};
+
+//{ Driver Code Starts.
+
 int main()
 {
-    int n, m;
-    // Enter element in the first array...........
-    cout << "Enter the number of element in the first array" << endl;
-    cin >> n;
-    int a[n];
-    cout << "Enter the element in the first array" << endl;
-    for (int i = 0; i < n; i++)
+
+    int t;
+    cin >> t;
+
+    while (t--)
     {
-        cin >> a[i];
+
+        int n, m;
+        cin >> n >> m;
+        int a[n], b[m];
+
+        for (int i = 0; i < n; i++)
+            cin >> a[i];
+
+        for (int i = 0; i < m; i++)
+            cin >> b[i];
+        Solution ob;
+        cout << ob.doUnion(a, n, b, m) << endl;
     }
-    // Enter element in the second array........
-    cout << "Enter the number of element in the second array" << endl;
-    cin >> m;
-    int b[m];
-    cout << "Enter the element in the second array" << endl;
-    for (int i = 0; i < m; i++)
-    {
-        cin >> b[i];
-    }
-    // initialize third array...
-    int c[n + m];
-    int k = 0;
-    // element of first array in the third array
-    for (int i = 0; i < n; i++)
-    {
-        c[k++] = a[i];
-    }
-    // element of second array in the third array
-    for (int j = 0; j < m; j++)
-    {
-        int i;
-        // check duplicates...
-        for (i = 0; i < k; i++)
-        {
-            if (c[i] == b[j])
-                break;
-        }
-        // if no duplicate present so i==k otherwise skip the element....
-        if (i == k)
-        {
-            c[k++] = b[j];
-        }
-    }
-    // print the union of the elements...
-    for (int i = 0; i < k; i++)
-    {
-        cout << c[i] << " ";
-    }
+
     return 0;
 }
+// } Driver Code Ends
