@@ -50,7 +50,7 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n, i, j;
+        int n, i;
         cin >> n;
         int arr[n];
         for (int i = 0; i < n; i++)
