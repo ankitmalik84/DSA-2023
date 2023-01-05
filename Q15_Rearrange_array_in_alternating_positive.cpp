@@ -44,8 +44,10 @@ void rearrange(int arr[], int n)
 
                 // the new wrong-index entry is now 2 steps
                 // ahead
+                // agar index aur wrong index k bich ka diff 2 ya 2 se jyada hai toh hum usse increment kardenge phir hum utne hi element ka rightrotate karenge
                 if (index - wrongIndex >= 2)
                     wrongIndex = wrongIndex + 2;
+                // agar unke biche ka diff 2 se kaam hai toh yani element shi order main hain
                 else
                     wrongIndex = -1;
             }
