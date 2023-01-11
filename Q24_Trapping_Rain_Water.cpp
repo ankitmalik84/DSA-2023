@@ -41,24 +41,16 @@ public:
     }
 };
 
-//{ Driver Code Starts.
-
 int main()
 {
-
     int t;
-    // testcases
     cin >> t;
-
     while (t--)
     {
         int n;
-
         // size of array
         cin >> n;
-
         int a[n];
-
         // adding elements to the array
         for (int i = 0; i < n; i++)
         {
