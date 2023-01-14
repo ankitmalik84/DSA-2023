@@ -11,6 +11,9 @@ public:
     // that array is divided into three parts.
     void threeWayPartition(vector<int> &arr, int a, int b)
     {
+        // do var as a pointer banayenge aur check karenge ki left point var range k first element se bada hai aur right range se bhi bada hai toh
+        //  right most pointer se swap kar denge aur right pointer ko decrement kr denge
+        // otherwise check karenge ki element left range var se
         int l = 0;
         int r = arr.size() - 1;
         for (int i = 0; i <= r; i++)
