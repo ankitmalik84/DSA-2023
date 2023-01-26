@@ -7,7 +7,8 @@
 //                        aur iss wale function ka answer hoga one times two aur one time one "1211"
 // agar say(4)-->1211     ab yaha piche dekho last hmara ans 21 tha toh usse hum "1211" keh skte h toh ye hmara amswer hoga
 //                        aur iss wale function ka answer hoga one times one aur one time two aur two time one "111221"
-
+// q$6
+// no. 62
 class Solution
 {
 public:
