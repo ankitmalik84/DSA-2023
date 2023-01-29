@@ -16,7 +16,6 @@ public:
                 x++;
             else
                 y++;
-
             if (x == y)
                 c++;
         }
