@@ -1,0 +1,44 @@
+// Q58
+// no. 75
+#include <iostream>
+using namespace std;
+
+string printSequence(string arr[], string input)
+{
+    string output = "";
+
+    // length of input string
+    int n = input.length();
+    for (int i = 0; i < n; i++)
+    {
+        // Checking for space
+        if (input[i] == ' ')
+            output = output + "0";
+
+        else
+        {
+            // Calculating index for each
+            // character
+            int position = input[i] - 'A';
+            output = output + arr[position];
+        }
+    }
+
+    // Output sequence
+    return output;
+}
+int main()
+{
+    // yaha ASCI value ka use karenge ki agar hum A ki ASCI value m se A ko minus kare toh 0 ayyegi toh hum apne ans wale array m str k array ki value dal denge
+    // storing the sequence in array
+    string str[] = {"2", "22", "222", "3", "33", "333", "4",
+                    "44", "444", "5", "55", "555", "6", "66",
+                    "666", "7", "77", "777", "7777", "8", "88",
+                    "888", "9", "99", "999", "9999"};
+
+    string input = "GEEKSFORGEEKS";
+    cout << printSequence(str, input);
+    return 0;
+
+    return 0;
+}
